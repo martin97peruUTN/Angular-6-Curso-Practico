@@ -9,15 +9,18 @@ import { UserComponent } from './user/user.component';
 
 import { DataService } from "./data.service"
 import { AboutComponent } from './about/about.component';
+import { HelloComponent } from './hello/hello.component';
 
 const routes: Route[] = [
-  {path: "", component: AppComponent},
+  {path: "", component: HelloComponent},
   {path: "about", component: AboutComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    HelloComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,10 @@
 <h2 *ngIf="activated">
     Activado
 </h2>-->
+
+
+
+
 <!--
 <div>
     <p>Name: {{name}}</p>
@@ -18,7 +22,7 @@
     </ul>
 </div>
 -->
-<!---->
+<!--
 <form (submit)="addUser(newUser)">
     <input type="text" #newUser>
     <button>Send user</button>
@@ -43,3 +47,16 @@
     <h3>{{post.title}}</h3>
     <p>{{post.body}}</p>
 </div>
+-->
+
+<ul>
+    <li>
+        <a routerLink="/">Home</a>
+    </li>
+    <li>
+        <a routerLink="/about">About</a>
+    </li>
+</ul>
+
+
+<router-outlet></router-outlet>
